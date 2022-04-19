@@ -1,0 +1,6 @@
+---
+- hosts: sudha
+  tasks:
+  - name: uninstall httpd
+    package: name=httpd state=absent
+    become: yes

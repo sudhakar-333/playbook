@@ -1,0 +1,5 @@
+---
+- hosts: sudha
+  name: "iam taking backup of messages file"
+  tasks:
+  - copy: src=/var/log/messages dest=/tmp

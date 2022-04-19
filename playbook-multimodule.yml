@@ -1,0 +1,7 @@
+---
+- hosts: sudha
+  become: yes
+  name: copy and create file use multi commands
+  tasks:
+  - copy: src=/var/log/messages dest=/tmp/
+  - file: path=/tmp/testfile state=touch
